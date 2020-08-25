@@ -1,0 +1,35 @@
+<include file="public@header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:url('Man/style')}">图像合并</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form margin-top-20" action="{:url('Man/merge_add')}">
+			<div class="form-group">
+				<label for="input-image" class="col-sm-2 control-label">人像图片</label>
+				<div class="col-md-6 col-sm-10">
+					<input type="text" class="form-control" id="input-image" name="image"> 
+					<a href="javascript:uploadOneImage('图片上传','#input-image');">上传图片</a>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="input-image" class="col-sm-2 control-label">背景图片</label>
+				<div class="col-md-6 col-sm-10">
+					<input type="text" class="form-control" id="input-style" name="style"> 
+					<a href="javascript:uploadOneImage('图片上传','#input-style');">上传图片</a>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary js-ajax-submit">开始合并</button>
+					<a class="btn btn-default" href="javascript:history.back(-1);">{:lang('BACK')}</a>
+				</div>
+			</div>
+		</form>
+		<img style="width: 30%;"  src="{$image}">
+		<img style="width: 30%;"  src="{$style}">
+	</div>
+	<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

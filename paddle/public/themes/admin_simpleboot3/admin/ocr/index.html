@@ -1,0 +1,28 @@
+<include file="public@header" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:url('Man/index')}">文字识别</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form margin-top-20" action="{:url('Ocr/ocr_add')}">
+			<div class="form-group">
+				<label for="input-image" class="col-sm-2 control-label">上传文字图片</label>
+				<div class="col-md-6 col-sm-10">
+					<input type="text" class="form-control" id="input-image" name="image"> 
+					<a href="javascript:uploadOneImage('图片上传','#input-image');">上传图片</a>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary js-ajax-submit">开始识别</button>
+					<a class="btn btn-default" href="javascript:history.back(-1);">{:lang('BACK')}</a>
+				</div>
+			</div>
+		</form>
+		{$text}
+	</div>
+	<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>
