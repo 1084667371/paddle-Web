@@ -1,4 +1,7 @@
 # 手把手带你搭建paddlehub的web服务端(可视化)
+
+> 项目链接：[手把手带你搭建paddlehub的web服务端(可视化)](https://aistudio.baidu.com/aistudio/projectdetail/528354)
+
 首先呢先来介绍一下何为paddlehub
 
 paddlehub：便捷地获取PaddlePaddle生态下的预训练模型，完成模型的管理和一键预测。配合使用Fine-tune API，可以基于大规模预训练模型快速完成迁移学习，让预训练模型能更好地服务于用户特定场景的应用
